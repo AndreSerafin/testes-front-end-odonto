@@ -1,0 +1,17 @@
+export const defaultTheme = {
+  background: '#c8cdfd',
+  white: '#fff9e9',
+  danger: '#d93a17',
+  sucess: '#51bc4f',
+  'header-background': '#eceeff',
+  'blue-100': '#d1dff2',
+  'blue-200': '#8fafe7',
+  'blue-300': '#6188cb',
+  'blue-400': '#456bad',
+  'blue-500': '#40488c',
+  'font-color': '#030532',
+  'input-placeholder': '#343330',
+  'quantity-control-color': '#dfedf0',
+  'main-div-backgroung': '#e8f1fe',
+  'gray-200': '#444141',
+};
