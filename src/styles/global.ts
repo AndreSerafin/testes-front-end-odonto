@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: ${(props) => props.theme['background']};
+        background: ${(props) => props.theme.background};
         display: flex;
         flex-direction: column;
     }
@@ -18,4 +18,13 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 500;
         font-size: 1rem
     }
-`;
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+     transition: background-color 5000s ease-in-out 0s;
+     -webkit-text-fill-color: ${(props) =>
+       props.theme['font-color']} !important;
+    }
+`

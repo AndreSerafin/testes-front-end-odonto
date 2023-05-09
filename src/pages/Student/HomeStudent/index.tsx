@@ -1,14 +1,12 @@
-import { MainHome } from './styles';
-import logoOdonto from '../../../assets/images/LogoOdonto.png';
-import { EyeClosed, Lock, User } from 'phosphor-react';
+import { MainHome } from './styles'
+import logoOdonto from '../../../assets/images/LogoOdonto.png'
+import { EyeClosed, Lock, User } from 'phosphor-react'
 
 export function HomeStudent() {
-  const passwordLength: number = 4;
-  const userLength: number = 7;
   return (
     <MainHome>
       <div>
-        <img src={logoOdonto} />
+        <img src={logoOdonto} alt="" />
       </div>
 
       <div>
@@ -22,7 +20,7 @@ export function HomeStudent() {
               id="enrollment"
               type="text"
               placeholder="Matrícula"
-              maxLength={userLength}
+              maxLength={7}
             />
           </div>
 
@@ -35,7 +33,7 @@ export function HomeStudent() {
               id="password"
               type="password"
               placeholder="Senha"
-              maxLength={passwordLength}
+              maxLength={4}
             />
             <EyeClosed size={25} />
           </div>
@@ -48,5 +46,5 @@ export function HomeStudent() {
         <button>Cadastrar-se</button>
       </div>
     </MainHome>
-  );
+  )
 }

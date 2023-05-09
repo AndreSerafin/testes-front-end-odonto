@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const MainHome = styled.main`
   margin-top: 4rem;
@@ -45,7 +45,7 @@ export const MainHome = styled.main`
         border-radius: 12px;
         transition: 0.3s;
 
-        background-color: ${(props) => props.theme['white']};
+        background-color: ${(props) => props.theme['blue-100']};
 
         label {
           color: ${(props) => props.theme['input-placeholder']};
@@ -56,7 +56,7 @@ export const MainHome = styled.main`
           width: 100%;
           padding: 1rem 0;
           border: none;
-          background: transparent;
+          background: ${(props) => props.theme['blue-100']};
         }
         &:focus-within {
           box-shadow: 0 0 0 2px ${(props) => props.theme['blue-300']};
@@ -82,7 +82,7 @@ export const MainHome = styled.main`
       font-weight: bold;
       cursor: pointer;
 
-      color: ${(props) => props.theme['white']};
+      color: ${(props) => props.theme.white};
       background: ${(props) => props.theme['blue-500']};
       transition: 0.4s;
 
@@ -91,4 +91,4 @@ export const MainHome = styled.main`
       }
     }
   }
-`;
+`
